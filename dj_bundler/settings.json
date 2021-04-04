@@ -1,0 +1,19 @@
+{   
+    "assets": {
+        "exists": true,
+        "path": "./assets",
+        "bundle": true,
+        "minify": true 
+    }, 
+    "static": {
+        "exists": true,
+        "path": "./static",
+        "bundle": true,
+        "minify": true                            
+    },
+    "templates": {
+        "exists": true,
+        "path": "./templates",        
+        "minify": true
+    }
+}
