@@ -1,16 +1,16 @@
 # TODO
 # include comments in html and css
 # allow for a few different apps (different static and template folders)
-# incorporate layout.html and jinja2 code in to html minify function
 # catch errors
 # provide logging of last session
+# implement file stamp changing only for static files that have been changed
 
 
 from os import listdir, path, mkdir, remove, scandir
 from pathlib import Path
 from shutil import copyfile, rmtree
 import json
-from minify import minify
+from .minify import minify
 from datetime import datetime
 
 BASE_DIR = Path(__file__).resolve().parent.parent
