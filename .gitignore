@@ -1,5 +1,6 @@
 /.idea
 /.vscode
-/assets
-/static
-/templates
+static_dev
+templates_dev
+static
+templates

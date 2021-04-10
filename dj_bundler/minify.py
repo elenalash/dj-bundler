@@ -7,7 +7,7 @@ for char_one in js_symbols:
         couple = [char_one, char_two]
         js_couples.append(couple)
 
-css_symbols = set(",.:;}{# ")
+css_symbols = set(",.:;}{#-' )(>"+'"')
 css_couples = []
 for char_one in css_symbols:
     for char_two in css_symbols:
@@ -62,7 +62,7 @@ def check_char_css(string, index):
 
 def minify(file_, file_type):      
     with open(file_, "r") as f:    
-        if file_type == "js":
+        if file_type == ".js":
             txt = f.readlines()
             new_txt = ""
             for line in txt:
@@ -82,10 +82,10 @@ def minify(file_, file_type):
         else:
             txt = f.read()
             txt = txt.replace('\n', '')
-            if file_type == "html":             
+            if file_type == ".html":             
                 for i in range(0, len(txt)):
                     check_char_html(txt, i)        
-            elif file_type == "css":
+            elif file_type == ".css":
                 for i in range(0, len(txt)):
                     check_char_css(txt, i)
             else:

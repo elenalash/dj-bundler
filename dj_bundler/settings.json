@@ -1,19 +1,14 @@
-{   
-    "assets": {
-        "exists": true,
-        "path": "./assets",
+{       
+    "static": {        
+        "path": "./static_dev",
         "bundle": true,
-        "minify": true 
-    }, 
-    "static": {
-        "exists": true,
-        "path": "./static",
-        "bundle": true,
-        "minify": true                            
+        "minify": true,
+        "production_path": "./static",
+        "libraries": "./static/libs"                            
     },
     "templates": {
-        "exists": true,
-        "path": "./templates",        
-        "minify": true
+        "path": "./templates_dev",        
+        "minify": true,
+        "production_path": "./templates"
     }
 }
